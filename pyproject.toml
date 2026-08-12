@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "noatmark-text-hygiene"
+version = "0.1.0"
+description = "Strip invisible characters (zero-width, BOM) and clean LLM formatting artifacts. Companion to noatmark.com."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "NoAtMark", email = "hello@noatmark.com" }]
+keywords = [
+    "unicode", "invisible characters", "zero-width", "text cleaning",
+    "ai text", "text hygiene", "clean text", "llm output",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Text Processing",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://noatmark.com/"
+Documentation = "https://noatmark.com/tools/llm-formatter/"
+Source = "https://github.com/ylwl1997/noatmark-text-hygiene"
+Issues = "https://github.com/ylwl1997/noatmark-text-hygiene/issues"
+
+[tool.setuptools]
+packages = ["noatmark_text_hygiene"]
